@@ -42,11 +42,11 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid='
 
   	//	window.alert("2 ");
 
-if((Math.round(tempMaxValue - 273.15)>2)){
+if((Math.round(tempMaxValue - 273.15)>40)){
      //window.alert("2.5");
 
     suggestionTemp.innerHTML = "Temprature Will Be More Than 40 Degree Celsius Today Use sunscreen lotion ! ";
-    //window.alert("2.6");
+    window.alert("Temprature Will Be More Than 40 Degree Celsius Today Use sunscreen lotion ! ");
 
 }
 
@@ -54,6 +54,7 @@ if((Math.round(tempMaxValue - 273.15)>2)){
 
 if(descValue.localeCompare("Rain") == 1){
     suggestionRain.innerHTML = "It Will Rain Today Carry Umbrella !";
+    window.alert("It Will Rain Today Carry Umbrella !");
 }
 
 	//	window.alert("4 ");
