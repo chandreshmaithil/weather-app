@@ -42,7 +42,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid='
 
   	//	window.alert("2 ");
 
-if((Math.round(tempMaxValue - 273.15)>40)){
+if((Math.round(tempMaxValue - 273.15)>2)){
      //window.alert("2.5");
 
     suggestionTemp.innerHTML = "Temprature Will Be More Than 40 Degree Celsius Today Use sunscreen lotion ! ";
